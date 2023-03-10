@@ -1,8 +1,0 @@
-image
-.vscode
-LICENSE
-README.md
-minishell
-minishell.dSYM*
-.DS_Store
-*.o
