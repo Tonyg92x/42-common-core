@@ -68,76 +68,76 @@
 Libft text.
 </p>
 
-<!-- 01-printf -->
-## 01-printf
+<!-- 02-printf -->
+## 02-printf
 <p>
-01-printf text.
+02-printf text.
 </p>
 
-<!-- 02-gnl -->
-## 02-gnl
+<!-- 03-gnl -->
+## 03-gnl
 <p>
-02-gnl text.
+03-gnl text.
 </p>
 
-<!-- 03-push_swap -->
-## 03-push_swap
+<!-- 04-push_swap -->
+## 04-push_swap
 <p>
-03-push_swap text.
+04-push_swap text.
 </p>
 
-<!-- 04-pipex -->
-## 04-pipex
+<!-- 05-pipex -->
+## 05-pipex
 <p>
-04-pipex text.
+05-pipex text.
 </p>
 
-<!-- 05-so_long -->
-## 05-so_long
+<!-- 06-so_long -->
+## 06-so_long
 <p>
-05-so_long text.
+06-so_long text.
 </p>
 
-<!-- 06-philosophers -->
-## 06-philosophers
+<!-- 07-philosophers -->
+## 07-philosophers
 <p>
-06-philosophers text.
+07-philosophers text.
 </p>
 
-<!-- 07-minishell -->
-## 07-minishell
+<!-- 08-minishell -->
+## 08-minishell
 <p>
-07-minishell text.
+08-minishell text.
 </p>
 
-<!-- 08-cub3d -->
-## 08-cub3d
+<!-- 09-cub3d -->
+## 09-cub3d
 <p>
-08-cub3d text.
+09-cub3d text.
 </p>
 
-<!-- 09-piscineCPP -->
-## 09-piscineCPP
+<!-- 10-piscineCPP -->
+## 10-piscineCPP
 <p>
-09-piscineCPP text.
+10-piscineCPP text.
 </p>
 
-<!-- 10-inception -->
-## 10-inception
+<!-- 11-inception -->
+## 11-inception
 <p>
-10-inception text.
+11-inception text.
 </p>
 
-<!-- 11-irc -->
-## 11-irc
+<!-- 12-irc -->
+## 12-irc
 <p>
-11-irc text.
+12-irc text.
 </p>
 
-<!-- 12-transcendence -->
-## 12-transcendence
+<!-- 13-transcendence -->
+## 13-transcendence
 <p>
-12-transcendence text.
+13-transcendence text.
 </p>
 
 
