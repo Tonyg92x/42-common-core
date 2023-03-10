@@ -21,24 +21,124 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#00-libft">libft</a>
+    </li>
+    <li>
+      <a href="#01-printf">printf</a>
+    </li>
+    <li>
+      <a href="#02-gnl">gnl</a>
+    </li>
+    <li>
+      <a href="#03-push_swap">push_swap</a>
+    </li>
+    <li>
+      <a href="#04-pipex">pipex</a>
+    </li>
+    <li>
+      <a href="#05-so_long">so_long</a>
+    </li>
+    <li>
+      <a href="#06-philosophers">philosophers</a>
+    </li>
+    <li>
+      <a href="#07-minishell">minishell</a>
+    </li>
+    <li>
+      <a href="#08-cub3d">cub3d</a>
+    </li>
+    <li>
+      <a href="#09-piscineCPP">piscineCPP</a>
+    </li>
+    <li>
+      <a href="#10-inception">inception</a>
+    </li>
+    <li>
+      <a href="#11-irc">irc</a>
+    </li>
+    <li>
+      <a href="#12-transcendence">transcendence</a>
     </li>
   </ol>
 </details>
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+ <!-- 00-libft -->
+## 00-libft
+<p>
+Libft text.
+</p>
 
-<p align="left">
-  This is my c programming language library.
+<!-- 01-printf -->
+## 01-printf
+<p>
+01-printf text.
+</p>
 
- <!-- INSTALLATION -->
-## Installation
-  Copy the repository in the project you want to use the library.
-```markdown
-git clone git@github.com:Tonyg92x/42libft.git
-```
-  Then all you got to do to have the libft.a file is to execute the command make in the folder. You can then compile your'e project with the libft.a and it will give you every fonction in the library.
+<!-- 02-gnl -->
+## 02-gnl
+<p>
+02-gnl text.
+</p>
+
+<!-- 03-push_swap -->
+## 03-push_swap
+<p>
+03-push_swap text.
+</p>
+
+<!-- 04-pipex -->
+## 04-pipex
+<p>
+04-pipex text.
+</p>
+
+<!-- 05-so_long -->
+## 05-so_long
+<p>
+05-so_long text.
+</p>
+
+<!-- 06-philosophers -->
+## 06-philosophers
+<p>
+06-philosophers text.
+</p>
+
+<!-- 07-minishell -->
+## 07-minishell
+<p>
+07-minishell text.
+</p>
+
+<!-- 08-cub3d -->
+## 08-cub3d
+<p>
+08-cub3d text.
+</p>
+
+<!-- 09-piscineCPP -->
+## 09-piscineCPP
+<p>
+09-piscineCPP text.
+</p>
+
+<!-- 10-inception -->
+## 10-inception
+<p>
+10-inception text.
+</p>
+
+<!-- 11-irc -->
+## 11-irc
+<p>
+11-irc text.
+</p>
+
+<!-- 12-transcendence -->
+## 12-transcendence
+<p>
+12-transcendence text.
+</p>
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
