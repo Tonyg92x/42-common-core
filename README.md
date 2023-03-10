@@ -12,7 +12,7 @@
 <h3 align="center">42-common-core projects</h3>
 
   <p align="center">
-    All programming project's of the 42 common-core cursus. This a programming formation using c and c++. We also learned about vm's, docker's, subnetting and web-developpment.
+    The 42 common-core formation is a programming formation. In this formation, we learn c / c++ / vm / dockers / subnetting and web developpment. The project Born2BeRoot and netPractice are not present since they don't require any code.
   </p>
 </div>
 
