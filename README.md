@@ -21,43 +21,43 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#00-libft">libft</a>
+      <a href="#01-libft">libft</a>
     </li>
     <li>
-      <a href="#01-printf">printf</a>
+      <a href="#02-printf">printf</a>
     </li>
     <li>
-      <a href="#02-gnl">gnl</a>
+      <a href="#03-gnl">gnl</a>
     </li>
     <li>
-      <a href="#03-push_swap">push_swap</a>
+      <a href="#04-push_swap">push_swap</a>
     </li>
     <li>
-      <a href="#04-pipex">pipex</a>
+      <a href="#05-pipex">pipex</a>
     </li>
     <li>
-      <a href="#05-so_long">so_long</a>
+      <a href="#06-so_long">so_long</a>
     </li>
     <li>
-      <a href="#06-philosophers">philosophers</a>
+      <a href="#07-philosophers">philosophers</a>
     </li>
     <li>
-      <a href="#07-minishell">minishell</a>
+      <a href="#08-minishell">minishell</a>
     </li>
     <li>
-      <a href="#08-cub3d">cub3d</a>
+      <a href="#09-cub3d">cub3d</a>
     </li>
     <li>
-      <a href="#09-piscineCPP">piscineCPP</a>
+      <a href="#10-piscineCPP">piscineCPP</a>
     </li>
     <li>
-      <a href="#10-inception">inception</a>
+      <a href="#11-inception">inception</a>
     </li>
     <li>
-      <a href="#11-irc">irc</a>
+      <a href="#12-irc">irc</a>
     </li>
     <li>
-      <a href="#12-transcendence">transcendence</a>
+      <a href="#13-transcendence">transcendence</a>
     </li>
   </ol>
 </details>
