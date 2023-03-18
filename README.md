@@ -12,7 +12,7 @@
 <h3 align="center">42-common-core projects</h3>
 
   <p align="center">
-    The 42 common-core formation is a programming formation. In this formation, we learn c / c++ / vm / dockers / subnetting and web developpment. The project Born2BeRoot and netPractice are not present since they don't require any code.
+    The 42 common-core formation is a programming formation. In this formation, we learn c / c++ / vm / dockers / subnetting and web developpment. The project Born2BeRoot (secure linux vm creation) and netPractice (subnetting fundamentals) are not present since they don't require any code.
   </p>
 </div>
 
