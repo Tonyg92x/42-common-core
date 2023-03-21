@@ -19,7 +19,7 @@
 #	42 Quebec.
 
 ## -----  NAME OF THE PROGRAMM ----- ##
-NAME 			= helloworld
+NAME 			= btc
 
 ## ----- COMPILER AND FLAGS ----- ##
 CC				= c++

@@ -1,0 +1,37 @@
+Ex00:
+
+        We have data linked to date value. An efficient container type would be the usage of a date as a key.
+
+Ex01:
+
+        We have to evaluate an inverted Polish mathematical expression. This type of expression is renown to be
+        sorted with a stack memory allocation in computer programming for efficienty reasons.
+
+        Example:
+
+        In computer programming, a stack is a data structure that allows you to store and retrieve data in a specific order.
+        When evaluating expressions in Reverse Polish Notation (RPN), a stack-based algorithm is often used because it is
+        efficient and straightforward.
+
+        Let's take the example of evaluating the RPN expression "5 2 + 4 *". To evaluate this expression using a stack-based
+        algorithm, we start by pushing each number onto the stack in order: 5, 2. When we encounter the "+" operator, we pop
+        the last two numbers off the stack (2 and 5), add them together, and push the result (7) back onto the stack. The stack
+        now looks like this: 7.
+
+        Next, we encounter the "*" operator. We pop the last two numbers off the stack (7 and 4), multiply them together, and
+        push the result (28) back onto the stack. The final result is the only remaining item on the stack, which is 28.
+
+        Using a stack-based algorithm in this way makes it easy to keep track of the order in which operations should be
+        performed. It also eliminates the need for parentheses and ensures that each operation is applied to the correct
+        operands.
+
+        In contrast, evaluating expressions using a traditional algorithm can be more complex and require multiple passes
+        through the expression to determine the correct order of operations. For example, to evaluate the expression
+        "5 + 2 * 4", we would need to recognize that the multiplication should be performed before the addition, which requires
+        the use of parentheses or additional parsing steps.
+
+        Overall, a stack-based algorithm simplifies the evaluation of RPN expressions by allowing you to keep track of the order
+        of operations in a clear and efficient way.
+
+Ex 02:
+    I think the best way to do this is with set and multi map...
