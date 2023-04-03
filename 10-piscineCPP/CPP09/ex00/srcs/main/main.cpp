@@ -18,13 +18,30 @@ bool    validDate(std::string date)
 {
     if (date.size() != 10)
         return (false);
-    for (unsigned long i = 0; i < date.size(); i++)
+
+    try
     {
-        if ((date[i] > 47 && date[i] < 58) || date[i] == '-')
-            continue;
-        else
+        for (unsigned long i = 0; i < date.size(); i++)
+        {
+            if ((date[i] > 47 && date[i] < 58) || date[i] == '-')
+                continue;
+            else
+                return (false);
+        }
+        int year = std::stoi(date.substr(0, date.find_first_of("-\0")));
+        date = date.substr(date.find_first_of("-\0") + 1, std::string::npos);
+        int month = std::stoi(date.substr(0, date.find_first_of("-\0")));
+        date = date.substr(date.find_first_of("-\0") + 1, std::string::npos);
+        int day = std::stoi(date);
+        if (year > 2022 || month > 12 || day > 31)
             return (false);
     }
+    catch(const std::exception& e)
+    {
+        return (false);
+    }
+    
+
     return (true);
 }
 
@@ -39,7 +56,7 @@ bool    validValue(double value)
             std::cout << "Error: not a positive number." << std::endl;
             return (false);
         }
-        else if (value > 100)
+        else if (value > 1000)
         {
             std::cout << "Error: too large number." << std::endl;
             return (false);
@@ -101,7 +118,8 @@ int	main(int argc, char **argv)
                     if (it == DB.end())
                     {
                         it = DB.lower_bound(date);
-                        it--;
+                        if (it != DB.begin())
+                            it--;
                     }
                     std::cout << date << " => " << value << " = " << nbBit * it->second << std::endl;
                 }

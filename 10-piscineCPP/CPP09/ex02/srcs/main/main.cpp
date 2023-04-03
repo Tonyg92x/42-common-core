@@ -37,7 +37,7 @@ int main(int argc, char* argv[])
         for (int i = 1; i < argc; ++i)
         {
             int number = std::atoi(argv[i]);
-            if (number < 1)
+            if (number < 0)
                 throw MergeSortException();
             numbers.push_back(number);
         }

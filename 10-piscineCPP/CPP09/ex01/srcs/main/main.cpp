@@ -77,6 +77,9 @@ int	main(int argc, char **argv)
             pile.push(result);
         }
     }
-    std::cout << pile.top() << std::endl;
+    if (pile.size() == 1)
+        std::cout << pile.top() << std::endl;
+    else
+        std::cout << "Error: missing one operand." << std::endl;
     return (0);
 }
