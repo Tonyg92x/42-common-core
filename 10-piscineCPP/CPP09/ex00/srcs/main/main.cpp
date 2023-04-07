@@ -33,7 +33,15 @@ bool    validDate(std::string date)
         int month = std::stoi(date.substr(0, date.find_first_of("-\0")));
         date = date.substr(date.find_first_of("-\0") + 1, std::string::npos);
         int day = std::stoi(date);
+        if (year == 0 || month == 0 || day == 0)
+            return (false);
         if (year > 2022 || month > 12 || day > 31)
+            return (false);
+        if (month == 2 && day > 28)
+            return (false);
+        if (month <= 7 && month % 2 == 0 && day > 30)
+            return (false);
+        if (month > 7 && month % 2 != 0 && day > 30)
             return (false);
     }
     catch(const std::exception& e)
