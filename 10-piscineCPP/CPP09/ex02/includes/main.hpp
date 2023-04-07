@@ -9,6 +9,33 @@
 #include <iterator>
 #include <sys/time.h>
 
+
+/*  Insert sort algorith
+*/
+template <typename Container>
+void    insertSort(Container& container)
+{
+    typename    Container::iterator it = container.begin();
+    typename    Container::iterator end = container.end();
+    int         x, y;
+
+    while (it != end)
+    {
+        x = *it;
+        it++;
+        if (it == end)
+            break;
+        y = *it;
+        if (x > y)
+        {
+            *it = x;
+            it--;
+            *it = y;
+            it = container.begin();
+        }
+    }
+}
+
 /*  Insert Merge sort algorithm
 
     It use the merge sort algorithm, but add a insert algorithm
@@ -17,14 +44,14 @@
     the container size of one for each container.
 */
 template <typename Container>
-void mergeInsertSort(Container& container)
+void    mergeInsertSort(Container& container)
 {
     if (container.size() <= 1)
         return;
 
     if (container.size() < 10)
     {
-        std::sort(container.begin(), container.end());
+        insertSort(container);
         return;
     }
 

@@ -14,6 +14,15 @@
 
 void    error(void) {std::cout <<  "\033[31mError\033[0m" << std::endl;exit(1);}
 
+class invalidValueException : public std::exception
+{
+    public:
+        const char* what() const throw()
+        {
+            return "Error";
+        }
+};
+
 bool    validDate(std::string date)
 {
     if (date.size() != 10)
@@ -33,7 +42,7 @@ bool    validDate(std::string date)
         int month = std::stoi(date.substr(0, date.find_first_of("-\0")));
         date = date.substr(date.find_first_of("-\0") + 1, std::string::npos);
         int day = std::stoi(date);
-        if (year == 0 || month == 0 || day == 0)
+        if (year < 1 || month < 1 || day < 1)
             return (false);
         if (year > 2022 || month > 12 || day > 31)
             return (false);
@@ -48,27 +57,20 @@ bool    validDate(std::string date)
     {
         return (false);
     }
-    
-
     return (true);
 }
 
 bool    validValue(double value)
 {
-    bool is_int = (std::floor((float) value) == value) && (std::ceil((float) value) == value);
-
-    if (is_int)
+    if (value < 0)
     {
-        if (value < 0)
-        {
-            std::cout << "Error: not a positive number." << std::endl;
-            return (false);
-        }
-        else if (value > 1000)
-        {
-            std::cout << "Error: too large number." << std::endl;
-            return (false);
-        }
+        std::cout << "Error: not a positive number." << std::endl;
+        return (false);
+    }
+    else if (value > 1000)
+    {
+        std::cout << "Error: too large number." << std::endl;
+        return (false);
     }
     return (true);
 }
@@ -119,6 +121,11 @@ int	main(int argc, char **argv)
             try
             {
                 value = line.substr(date.size() + 3, std::string::npos);
+                for (unsigned int i = 0; i < value.size(); i++)
+                {
+                    if ((line[i] < 48 || line[i] > 57) && line[i] != '.')
+                        throw invalidValueException();
+                }
                 nbBit = std::stod(value);
                 if (validValue(nbBit))
                 {
