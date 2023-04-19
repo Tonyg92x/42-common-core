@@ -25,14 +25,11 @@ class invalidValueException : public std::exception
 
 bool    validDate(std::string date)
 {
-    if (date.size() != 10)
-        return (false);
-
     try
     {
         for (unsigned long i = 0; i < date.size(); i++)
         {
-            if ((date[i] > 47 && date[i] < 58) || date[i] == '-')
+            if ((date[i] > 47 && date[i] < 58) || date[i] == '-' || date[i] == ' ')
                 continue;
             else
                 return (false);
@@ -60,18 +57,23 @@ bool    validDate(std::string date)
     return (true);
 }
 
+std::string removeWS(std::string str)
+{
+    unsigned long x = str.find_first_of(' ');
+    while (x != str.npos)
+    {
+        str.erase(x, 1);
+        x = str.find_first_of(' ');
+    }
+    return (str);
+}
+
 bool    validValue(double value)
 {
     if (value < 0)
-    {
-        std::cout << "Error: not a positive number." << std::endl;
-        return (false);
-    }
+        throw invalidValueException();
     else if (value > 1000)
-    {
-        std::cout << "Error: too large number." << std::endl;
-        return (false);
-    }
+        throw invalidValueException();
     return (true);
 }
 
@@ -115,12 +117,13 @@ int	main(int argc, char **argv)
 
     while (std::getline(inputFile, line))
     {
-        date = line.substr(0, line.find_first_of(", \n\0"));
+        line = removeWS(line);
+        date = line.substr(0, line.find_first_of(",|"));
         if (validDate(date))
         {
             try
             {
-                value = line.substr(date.size() + 3, std::string::npos);
+                value = line.substr(line.find_first_of('|') + 1, std::string::npos);
                 for (unsigned int i = 0; i < value.size(); i++)
                 {
                     if ((line[i] < 48 || line[i] > 57) && line[i] != '.')
@@ -138,12 +141,18 @@ int	main(int argc, char **argv)
                     }
                     std::cout << date << " => " << value << " = " << nbBit * it->second << std::endl;
                 }
+                else
+                    throw invalidValueException();
             }
             catch(const std::exception& e)
             {
                 std::cout << "Error: bad input => " << line << std::endl;
             }
         }
+        else if (date != "date" && date != "")
+            std::cout << "Error: invalid date => " << date << std::endl;
+
     }
+    inputFile.close();
     return (0);
 }
