@@ -71,31 +71,31 @@ This is some fonctions from the c standard library. It is used afterward to do f
 <!-- 02-printf -->
 ## 02-printf
 <p>
-Printf is the print fonction in c. In this project, we use va_arg in to have multiple type and numbre of arguments possible in a fonction.
+Printf is the print fonction in c. In this project, I use va_arg as argument to enable multiple argument and variable type.
 </p>
 
 <!-- 03-gnl -->
 ## 03-gnl
 <p>
-Get next line read from a file the next line. In the project, we have to get an environnement variable to know the number of character's read. If the variable value is at 0, then we have to keep using the read fonction until we have the end of the line. If the variable value is higher then the line number of characters, the value of the read is store in a static variable to keep the information at the next gnl call. 
+This is the classic get next line fonction. In this project, we have to handle a BUFFER_SIZE value that is the size of the read buffer size. Static variable is used to save extra character read.
 </p>
 
 <!-- 04-push_swap -->
 ## 04-push_swap
 <p>
-Algorithm projet to sort some numbers in a stack memory container in an efficient way in some base parameters like movement avaible and number of pile memory container (2).
+Algorithm projet of sorting some numbers. There is two stack and limited actions possible to sort the number in ascending order.
 </p>
 
 <!-- 05-pipex -->
 ## 05-pipex
 <p>
-First project where we execute some binary with execve fonction. We use pipe to communicate output of one binary file to the an other binary input. The bonus is to have conscutive pipe.
+In this project, we learned about a pipe: a way to communicate between two processes by linking two file descriptors.
 </p>
 
 <!-- 06-so_long -->
 ## 06-so_long
 <p>
-2D graphical project using MLX visual library. MLX visual library use in the backend openGL. There is some map parsing on input and key press event, game loop and graphical rendering using premade fonctions to render it.
+2D graphical project using MLX visual library. MLX visual library use in the backend openGL. There is some map parsing on input and key press event, game loop and graphical rendering using premade fonctions to render it. I am not sure if I did fix the run time leak. woops
 </p>
 
 <!-- 07-philosophers -->
@@ -107,7 +107,7 @@ Multi threading project. It's the classical philosopher exercise to learn the ba
 <!-- 08-minishell -->
 ## 08-minishell
 <p>
-This is a shell program to explore a unix operating system. The non bonus is limited to pipe operators. This project is like 70% parsing to understand the command input the right way and afterward (30 %) execute it the right way to have a behavior close to bash.
+This is a shell program. The non bonus is limited to pipe operators. This project is mostly about parsiong and having good small usefull fonction that you can use multiple time.
 </p>
 
 <!-- 09-cub3d -->
@@ -137,7 +137,7 @@ IRC server. I loved this project. Unfortunatly I had only 2 weeks to do it so it
 <!-- 13-transcendence -->
 ## 13-transcendence
 <p>
-Full stack web application. 
+Full stack web application. Ugly ass code woops
 </p>
 
 
