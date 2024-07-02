@@ -23,7 +23,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https:/42.fr">
+  <a href="https://42.fr">
     <img src="images/42_Logo.svg.png" alt="Logo" width="80" height="80">
   </a>
 
