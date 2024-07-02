@@ -23,7 +23,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://42.fr">
     <img src="images/42_Logo.svg.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -81,5 +81,5 @@ git@github.com:Tonyg92x/42printf.git
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/anthony-guay-75b27421b/
+[linkedin-url]: https://www.linkedin.com/in/anthony-g-75b27421b/
 [product-screenshot]: images/screenshot.png
